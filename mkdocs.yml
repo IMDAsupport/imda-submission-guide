@@ -1,0 +1,56 @@
+# -------------------------------------------------------------------
+# 1. CORE CONFIGURATION
+# -------------------------------------------------------------------
+site_name: IMDA Data Submission Guide
+site_author: Your Institute/Team Name
+docs_dir: docs
+site_url: https://your-website.com/
+
+# -------------------------------------------------------------------
+# 2. THEME CONFIGURATION (Material for MkDocs)
+# -------------------------------------------------------------------
+theme:
+  name: material
+  logo: assets/img/IMDA-logo.png
+  palette:
+    # Palette setup for dynamic light/dark mode switching
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: teal
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: teal
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.expand
+    - toc.follow
+    - toc.integrate         # Moves the TOC from the right side to the left sidebar
+    - navigation.top          # Adds the Back-to-Top button
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+# -------------------------------------------------------------------
+# 3. MARKDOWN EXTENSIONS
+# -------------------------------------------------------------------
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - tables
+
+# -------------------------------------------------------------------
+# 4. NAVIGATION STRUCTURE (nav) - FINAL CLEAN VERSION
+# This defines the single-page flow structure.
+# -------------------------------------------------------------------
+nav:
+  - 'Submission SOP': index.md
