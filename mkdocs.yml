@@ -11,28 +11,29 @@ site_url: https://your-website.com/
 # -------------------------------------------------------------------
 theme:
   name: material
-  logo: assets/img/IMDA-logo.png
+  logo: assets/img/IMDAlogo.png  # Note: Ensure your file is named IMDAlogo.png, not IMDA-logo.png
   palette:
-    # Palette setup for dynamic light/dark mode switching
+    # 1. Light Mode (Default Scheme)
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: indigo
-      accent: teal
+      primary: teal    # CHANGED: Ribbon color is now Teal for contrast
+      accent: indigo
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
+    # 2. Dark Mode (Slate Scheme)
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: indigo
-      accent: teal
+      primary: teal    # CHANGED: Ribbon color is now Teal for contrast
+      accent: indigo
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
   features:
     - navigation.expand
     - toc.follow
-    - toc.integrate         # Moves the TOC from the right side to the left sidebar
-    - navigation.top          # Adds the Back-to-Top button
+    - toc.integrate
+    - navigation.top
     - search.suggest
     - search.highlight
     - content.code.copy
@@ -50,7 +51,6 @@ markdown_extensions:
 
 # -------------------------------------------------------------------
 # 4. NAVIGATION STRUCTURE (nav) - FINAL CLEAN VERSION
-# This defines the single-page flow structure.
 # -------------------------------------------------------------------
 nav:
   - 'Submission SOP': index.md

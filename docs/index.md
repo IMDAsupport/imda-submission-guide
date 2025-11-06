@@ -104,29 +104,36 @@ This form is essential for defining the **scientific context** and **experimenta
 
 ![Screenshot of the Study Registration form showing fields for Study Details and Author List.](assets/img/6.png)
 
-### 2.2 Sample Registration 
+### 2.2 Sample Registration (Step 3)
 
-This is **Step 3: Sample** in the submission workflow. Here, you capture detailed **metadata** describing each biological sample, ensuring the **biological context** is fully recorded for data reuse.
+This is **Step 3: Sample** in the submission workflow. Here, you capture detailed **metadata** describing each biological sample, ensuring the **biological context** is fully recorded for data reuse. 
 
-**Purpose:** To define the exact origin, source, and classification of all samples (e.g., organism, tissue type, treatment received).
+**Purpose:** To define the exact origin, source, and classification of all samples, and to confirm the number of analytical files generated per sample.
 
 **Action:** You will provide the sample details primarily through an uploaded template file.
 
 | Required Field (Form) | Importance for Data Reusability |
 | :--- | :--- |
-| **Select Study*** | Links the sample details to the **Study ID** (from Step 2) they belong to. |
+| **Select Study*** | Links the sample details to the **Study ID** they belong to. |
 | **Source*** | The primary origin of the sample (e.g., tissue, cell culture, biofluid). |
 | **Organism Name*** | The full name of the organism or species studied. |
 | **Taxonomy ID*** | **Highly important.** Uses a standardized numerical identifier for unambiguous classification. |
 | **Sample File Template*** | The spreadsheet used to record individual sample treatments and characteristics. |
 
-**Final Action:**
-1.  **Download** the **Sample File Template** available on this page and fill it out offline.
-2.  **Upload** the completed file using the **Choose File** button under *Sample File Template*.
-3.  Click **Submit** to register the sample metadata. The workflow then proceeds to **Step 4: Experiment/Files**.
+#### Template Requirements and Sample ID Cross-Reference
+
+When filling out the **Sample File Template**, two details are crucial for later steps (Step 2.3 Experiment Templates):
+
+1. **File Count:** Locate the column labeled **'Number of files per sample'**. You must accurately enter the quantity of raw/derived data files associated with each individual sample. 
+2. **Sample ID Generation:** The unique **Sample IDs** created and listed on your dashboard (e.g., 210, 211) are what you must use to identify this sample in the Experiment Template.
 
 !!! tip "Taxonomy ID Verification"
-    When you enter the **Organism Name**, the system will use an API to **automatically fetch** the corresponding **Taxonomy ID**. Please **cross-check** the fetched ID for accuracy. Using correct IDs is essential for integrating your data with other public repositories.
+    When you enter the **Organism Name**, the system will use an API to **automatically fetch** the corresponding **Taxonomy ID**. Please **cross-check** the fetched ID for accuracy.
+
+**Final Action:**
+1.  **Download** the **Sample File Template** and fill it out offline, ensuring the **'Number of files per sample'** column is correct.
+2.  **Upload** the completed file using the **Choose File** button under *Sample File Template*.
+3.  Click **Submit** to register the sample metadata. The workflow then proceeds to **Step 4: Experiment/Files**.
 
 ![Image Description Goes Here](assets/img/7.png)
 
