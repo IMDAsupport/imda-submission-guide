@@ -122,7 +122,7 @@ First, provide the high-level information directly in the online form:
 | **Taxonomy ID*** | **ACTION:** The system automatically fetches this ID. Please **cross-check** the fetched ID for accuracy. |
 | **Sample File Template*** | The spreadsheet used to record individual sample details. |
 
-## 📊 Step B: Completing the Sample Template
+## Step B: Completing the Sample Template
 
 The **Sample File Template** is completed offline and uploaded here. This spreadsheet requires detailed information on every sample.
 
@@ -158,7 +158,7 @@ When filling out the MS File Template and NMR File Template (available for downl
 
 ---
 ![Image showing sample IDs being retrieved from the dashboard and placed into MS and NMR experiment templates.](assets/img/8.png)
-#### 🔗 Cross-Reference and Data Integrity
+#### Cross-Reference and Data Integrity
 
 It is **critical** to integrate your data file details directly into this template:
 
