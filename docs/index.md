@@ -104,7 +104,7 @@ This form is essential for defining the **scientific context** and **experimenta
 
 ![Screenshot of the Study Registration form showing fields for Study Details and Author List.](assets/img/6.png)
 
-### 2.2 Sample Registration (Step 3)
+### 2.2 Sample Registration
 
 **Purpose:** To define the exact origin, source, and classification of all samples, and to confirm the number of analytical files generated per sample.
 

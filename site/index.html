@@ -394,37 +394,22 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#22-sample-registration-step-3" class="md-nav__link">
+  <a href="#22-sample-registration" class="md-nav__link">
     <span class="md-ellipsis">
-      2.2 Sample Registration (Step 3)
+      2.2 Sample Registration
     </span>
   </a>
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-a-completing-the-online-form" class="md-nav__link">
+          <li class="md-nav__item">
+  <a href="#template-requirements-and-system-linkage-critical" class="md-nav__link">
     <span class="md-ellipsis">
-      Step A: Completing the Online Form
+      Template Requirements and System Linkage (Critical)
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#step-b-completing-the-sample-template" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step B: Completing the Sample Template
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Step B: Completing the Sample Template">
-      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#23-experiment-registration" class="md-nav__link">
@@ -839,10 +824,8 @@
 </ul>
 <p><strong>Final Action:</strong> Click <strong>Submit</strong>. Upon success, your study will be assigned a <strong>permanent Study ID</strong> (e.g., <strong>IMS_XXXXX</strong>), which will be used for all tracking and citation purposes. The workflow will then proceed to <strong>Step 3: Sample</strong>.</p>
 <p><img alt="Screenshot of the Study Registration form showing fields for Study Details and Author List." src="assets/img/6.png" /></p>
-<h3 id="22-sample-registration-step-3">2.2 Sample Registration (Step 3)</h3>
-<p>This is <strong>Step 3: Sample</strong> in the submission workflow. Its purpose is to capture all essential <strong>metadata</strong> describing your biological samples. </p>
-<p><strong>Purpose:</strong> To define the exact origin, source, and classification of all samples, ensuring the <strong>biological context</strong> is fully recorded for data reuse.</p>
-<h2 id="step-a-completing-the-online-form">Step A: Completing the Online Form</h2>
+<h3 id="22-sample-registration">2.2 Sample Registration</h3>
+<p><strong>Purpose:</strong> To define the exact origin, source, and classification of all samples, and to confirm the number of analytical files generated per sample.</p>
 <p>First, provide the high-level information directly in the online form:</p>
 <table>
 <thead>
@@ -853,58 +836,44 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Select Study</strong>*</td>
-<td style="text-align: left;">Links the sample details to the <strong>Study ID</strong> (from Step 2).</td>
+<td style="text-align: left;"><strong>Select Study*</strong></td>
+<td style="text-align: left;">Links the sample details to the <strong>Study ID</strong> (from Step 2) they belong to.</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Source</strong>*</td>
+<td style="text-align: left;"><strong>Source*</strong></td>
 <td style="text-align: left;">The primary origin of the sample (e.g., tissue, cell culture, biofluid).</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Organism Name</strong>*</td>
+<td style="text-align: left;"><strong>Organism Name*</strong></td>
 <td style="text-align: left;">Enter the organism's full name.</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Taxonomy ID</strong>*</td>
+<td style="text-align: left;"><strong>Taxonomy ID*</strong></td>
 <td style="text-align: left;"><strong>ACTION:</strong> The system automatically fetches this ID. Please <strong>cross-check</strong> the fetched ID for accuracy.</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Sample File Template</strong>*</td>
-<td style="text-align: left;">The spreadsheet used to record individual sample details.</td>
+<td style="text-align: left;"><strong>Sample File Template*</strong></td>
+<td style="text-align: left;">The spreadsheet used to upload sample details.</td>
 </tr>
 </tbody>
 </table>
-<h2 id="step-b-completing-the-sample-template">Step B: Completing the Sample Template</h2>
-<p>The <strong>Sample File Template</strong> is completed offline and uploaded here. This spreadsheet requires detailed information on every sample.</p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Template Column</th>
-<th style="text-align: left;">Requirement</th>
-<th style="text-align: left;">Reason</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><strong>Sample ID</strong></td>
-<td style="text-align: left;">The unique ID (e.g., R10, R11) created on your dashboard.</td>
-<td style="text-align: left;"><strong>CRITICAL:</strong> This ID must be used for every subsequent analytical template (Step 2.3).</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>'Number of files per sample'</strong></td>
-<td style="text-align: left;"><strong>MANDATORY:</strong> Enter the exact quantity of raw/derived data files associated with that specific sample.</td>
-<td style="text-align: left;">Ensures the system can verify all data files have been transferred.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Other Columns</strong></td>
-<td style="text-align: left;">Fill with details on treatments, collection, and storage.</td>
-<td style="text-align: left;">Provides necessary biological context.</td>
-</tr>
-</tbody>
-</table>
+<h3 id="template-requirements-and-system-linkage-critical">Template Requirements and System Linkage (Critical)</h3>
+<p>The <strong>Sample File Template</strong> is completed offline, and requires two crucial details for system linkage:</p>
+<ol>
+<li><strong>File Count:</strong> Locate the column labeled <strong>'Number of files per sample'</strong>. You must accurately enter the quantity of raw/derived data files associated with each individual sample.</li>
+<li><strong>Sample ID Cross-Reference:</strong><ul>
+<li>The unique <strong>Sample ID</strong> (e.g., R10, R11) is <strong>generated by the system after you submit this template</strong>.</li>
+<li><strong>CRITICAL:</strong> This Sample ID must be used to identify the sample in the first column of the Experiment Template (Step 2.3). A single Sample ID will cover all raw files associated with that sample.</li>
+</ul>
+</li>
+</ol>
+<div class="admonition info">
+<p class="admonition-title">Downloadable Form Note</p>
+<p>The <strong>downloadable form</strong> provided on this page is the <strong>Sample File Template</strong> mentioned above. Please download and fill it out completely offline.</p>
+</div>
 <p><strong>Final Action:</strong>
-1.  <strong>Download</strong> the <strong>Sample File Template</strong> and fill it out offline.
-2.  <strong>Upload</strong> the completed file using the <strong>Choose File</strong> button.
+1.  <strong>Download</strong> the <strong>Sample File Template</strong> and fill it out offline, ensuring the <strong>'Number of files per sample'</strong> column is correct.
+2.  <strong>Upload</strong> the completed file using the <strong>Choose File</strong> button under <em>Sample File Template</em>.
 3.  Click <strong>Submit</strong> to register the sample metadata. The workflow then proceeds to <strong>Step 4: Experiment/Files</strong>.</p>
 <p><img alt="Image Description Goes Here" src="assets/img/7.png" /></p>
 <h3 id="23-experiment-registration">2.3 Experiment Registration</h3>
