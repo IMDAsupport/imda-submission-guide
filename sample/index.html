@@ -328,9 +328,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#mhd-alignment" class="md-nav__link">
+  <a href="#what-to-fill" class="md-nav__link">
     <span class="md-ellipsis">
-      MHD Alignment
+      What to Fill
     </span>
   </a>
   
@@ -490,9 +490,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#mhd-alignment" class="md-nav__link">
+  <a href="#what-to-fill" class="md-nav__link">
     <span class="md-ellipsis">
-      MHD Alignment
+      What to Fill
     </span>
   </a>
   
@@ -525,74 +525,75 @@
 
 <h1 id="sample">Sample</h1>
 <p>Sample registration defines the origin, source, classification, and file count for all samples.</p>
-<h2 id="mhd-alignment">MHD Alignment</h2>
+<h2 id="what-to-fill">What to Fill</h2>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">MHD Term</th>
-<th style="text-align: left;">IMDA SOP Meaning</th>
-<th style="text-align: left;">Minimum Expectation</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><strong>Subject</strong></td>
-<td style="text-align: left;">Biological source from which a sample is derived.</td>
-<td style="text-align: left;">Capture organism and relevant source context.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Sample</strong></td>
-<td style="text-align: left;">Registered specimen or aliquot used in the study.</td>
-<td style="text-align: left;">Each sample must link to one study.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Characteristic Definition</strong></td>
-<td style="text-align: left;">Type of sample/subject descriptor.</td>
-<td style="text-align: left;">Include organism, organism part/source, disease, or cell type where applicable.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Characteristic Value</strong></td>
-<td style="text-align: left;">Actual value for a characteristic.</td>
-<td style="text-align: left;">Use controlled vocabulary values where available; use <strong>NA</strong> only when not applicable.</td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Required Field</th>
-<th style="text-align: left;">Importance</th>
+<th style="text-align: left;">Field</th>
+<th style="text-align: left;">What to Enter</th>
+<th style="text-align: left;">Writing Guideline</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align: left;"><strong>Select Study</strong>*</td>
-<td style="text-align: left;">Links sample details to the correct Study ID.</td>
+<td style="text-align: left;">Study ID to which these samples belong.</td>
+<td style="text-align: left;">Choose the correct study before uploading the template.</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Source</strong>*</td>
-<td style="text-align: left;">Primary sample origin, such as organism part, tissue, cell culture, or biofluid.</td>
+<td style="text-align: left;">Biological source, such as organism part, tissue, cell line, biofluid, or culture.</td>
+<td style="text-align: left;">Prefer controlled vocabulary terms; avoid local abbreviations.</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Organism Name</strong>*</td>
-<td style="text-align: left;">Full organism name.</td>
+<td style="text-align: left;">Scientific organism name.</td>
+<td style="text-align: left;">Use binomial name, for example <em>Homo sapiens</em> or <em>Oryza sativa</em>.</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Taxonomy ID</strong>*</td>
-<td style="text-align: left;">System-fetched taxonomy ID; verify it for accuracy.</td>
+<td style="text-align: left;">NCBI taxonomy identifier fetched by the system.</td>
+<td style="text-align: left;">Cross-check that the ID matches the organism name.</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Sample File Template</strong>*</td>
-<td style="text-align: left;">Spreadsheet used to upload sample details.</td>
+<td style="text-align: left;">Completed sample metadata spreadsheet.</td>
+<td style="text-align: left;">Do not change template headers.</td>
 </tr>
 </tbody>
 </table>
 <h2 id="template-requirements">Template Requirements</h2>
-<ol>
-<li><strong>File Count:</strong> Enter the correct value in the <strong>Number of files per sample</strong> column.</li>
-<li><strong>Sample ID Cross-Reference:</strong> After template submission, IMDA generates sample IDs. Use those IDs in the experiment template.</li>
-<li><strong>No Blank Cells:</strong> Use <strong>NA</strong> when information is not applicable.</li>
-</ol>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Template Column</th>
+<th style="text-align: left;">What to Fill</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Sample Name / Sample Label</strong></td>
+<td style="text-align: left;">Unique sample name used by the submitter. It should match the naming used in experiment metadata.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Organism / Source Details</strong></td>
+<td style="text-align: left;">Biological source, organism part, disease/condition, treatment, or cell type where applicable.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Number of files per sample</strong></td>
+<td style="text-align: left;">Exact count of raw or derived files linked to that sample.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Replicate / Group Information</strong></td>
+<td style="text-align: left;">Biological group, treatment group, control group, or replicate number where requested.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Missing or Not Applicable Values</strong></td>
+<td style="text-align: left;">Enter <strong>NA</strong> instead of leaving required cells blank.</td>
+</tr>
+</tbody>
+</table>
+<p>After template submission, IMDA generates sample IDs. Use those IDs in the experiment template.</p>
 <p><strong>Final Action:</strong></p>
 <ol>
 <li>Download and complete the sample file template.</li>

@@ -350,9 +350,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#mhd-alignment" class="md-nav__link">
+  <a href="#what-to-fill-in-the-experiment-template" class="md-nav__link">
     <span class="md-ellipsis">
-      MHD Alignment
+      What to Fill in the Experiment Template
     </span>
   </a>
   
@@ -490,9 +490,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#mhd-alignment" class="md-nav__link">
+  <a href="#what-to-fill-in-the-experiment-template" class="md-nav__link">
     <span class="md-ellipsis">
-      MHD Alignment
+      What to Fill in the Experiment Template
     </span>
   </a>
   
@@ -525,43 +525,6 @@
 
 <h1 id="experiment">Experiment</h1>
 <p>Experiment registration captures the analytical workflow and processed metabolite data.</p>
-<h2 id="mhd-alignment">MHD Alignment</h2>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">MHD Term</th>
-<th style="text-align: left;">IMDA SOP Meaning</th>
-<th style="text-align: left;">Minimum Expectation</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><strong>Assay</strong></td>
-<td style="text-align: left;">MS/NMR analytical measurement linked to the study.</td>
-<td style="text-align: left;">One study should have at least one assay.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Protocol</strong></td>
-<td style="text-align: left;">Sample preparation, chromatography, MS/NMR acquisition, or data processing method.</td>
-<td style="text-align: left;">Each assay should follow at least one protocol.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Parameter Definition</strong></td>
-<td style="text-align: left;">Instrument or acquisition parameter type.</td>
-<td style="text-align: left;">Capture instrument, acquisition polarity, ionization, and other method parameters where relevant.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Parameter Value</strong></td>
-<td style="text-align: left;">The selected or entered value for a parameter.</td>
-<td style="text-align: left;">Use dropdown or controlled vocabulary values when provided.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Sample Run</strong></td>
-<td style="text-align: left;">Analytical run connecting a sample to generated raw files.</td>
-<td style="text-align: left;">Each sample run must reference one sample and one or more raw data files.</td>
-</tr>
-</tbody>
-</table>
 <p><strong>Key Actions:</strong></p>
 <ul>
 <li>Select the analytical technique, such as MS or NMR.</li>
@@ -586,6 +549,58 @@
 <td style="text-align: left;"><strong>Nuclear Magnetic Resonance (NMR)</strong></td>
 <td style="text-align: left;">NMR Instrument Name, NMR Type, NMR Solvent</td>
 <td style="text-align: left;">Do not change column headers.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="what-to-fill-in-the-experiment-template">What to Fill in the Experiment Template</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Column / Field Type</th>
+<th style="text-align: left;">What to Enter</th>
+<th style="text-align: left;">Writing Guideline</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Sample ID</strong></td>
+<td style="text-align: left;">IMDA-generated sample ID from the Sample step.</td>
+<td style="text-align: left;">Copy exactly from the portal; do not use local sample names in this field.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Assay / Technique</strong></td>
+<td style="text-align: left;">MS or NMR assay used to generate the data.</td>
+<td style="text-align: left;">Use the portal dropdown term.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Protocol / Method Details</strong></td>
+<td style="text-align: left;">Sample preparation, extraction, chromatography, MS/NMR acquisition, and processing method details.</td>
+<td style="text-align: left;">Keep each method description short and factual, usually 2-4 lines.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Instrument Name</strong></td>
+<td style="text-align: left;">Official instrument model/name.</td>
+<td style="text-align: left;">Use the controlled term if available; otherwise request it through <strong>Update List</strong>.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ionization / Acquisition Polarity</strong></td>
+<td style="text-align: left;">Ionization method and positive/negative polarity for MS data where applicable.</td>
+<td style="text-align: left;">Select from dropdowns; do not type variants manually if a controlled term exists.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Raw Data File Name</strong></td>
+<td style="text-align: left;">Exact uploaded ZIP or raw file name.</td>
+<td style="text-align: left;">Must match the FTP-uploaded file name exactly, including extension.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>MD5 Checksum</strong></td>
+<td style="text-align: left;">32-character checksum for the uploaded file.</td>
+<td style="text-align: left;">Use lowercase checksum values.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Metabolite / Compound File</strong></td>
+<td style="text-align: left;">Processed metabolite table with identifiers and quantified values.</td>
+<td style="text-align: left;">Include metabolite name, identifier, SMILES, InChI, and quantification data where available.</td>
 </tr>
 </tbody>
 </table>
