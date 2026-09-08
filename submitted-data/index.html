@@ -431,6 +431,30 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Corrections After Submission">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#edit-upload-run" class="md-nav__link">
+    <span class="md-ellipsis">
+      Edit Upload Run
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#edit-metabolite-compound-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      Edit Metabolite / Compound File
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -439,6 +463,21 @@
       Controlled Vocabulary Updates
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Controlled Vocabulary Updates">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#update-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      Update List
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -523,6 +562,30 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Corrections After Submission">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#edit-upload-run" class="md-nav__link">
+    <span class="md-ellipsis">
+      Edit Upload Run
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#edit-metabolite-compound-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      Edit Metabolite / Compound File
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -531,6 +594,21 @@
       Controlled Vocabulary Updates
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Controlled Vocabulary Updates">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#update-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      Update List
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -597,7 +675,7 @@
 <p class="admonition-title">Processing Timeline</p>
 <p>The testing portal states that submissions are processed within <strong>7 days</strong>, and submitters are notified by email.</p>
 </div>
-<p><img alt="IMDA Submitted Data or My Study dashboard showing submitted studies." src="../assets/img/14.png" /></p>
+<p><img alt="IMDA Submitted Data page showing successfully submitted files and OK status." src="../assets/img/submitted_data.png" /></p>
 <h2 id="corrections-after-submission">Corrections After Submission</h2>
 <p>Use <strong>Edit File Data</strong> only when metadata or file corrections are required before final validation or during curator-requested correction.</p>
 <table>
@@ -627,11 +705,98 @@
 <li><strong>Edit Upload Run:</strong> Replace corrupted or incorrect raw data files.</li>
 <li><strong>Edit Metabolite / Compound File:</strong> Replace the processed metabolite summary file.</li>
 </ul>
-<p><img alt="IMDA dashboard row showing edit options before final submission." src="../assets/img/15.png" /></p>
-<p><img alt="IMDA edit upload run and metabolite file update options." src="../assets/img/16.png" /></p>
+<h3 id="edit-upload-run">Edit Upload Run</h3>
+<p>Use <strong>Edit Upload Run</strong> when a raw data file needs correction or replacement.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Field</th>
+<th style="text-align: left;">What to Enter</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Study</strong></td>
+<td style="text-align: left;">Select the study linked to the uploaded run.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>FTP Filename</strong></td>
+<td style="text-align: left;">Select the uploaded file that needs correction.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>MD5 Checksum</strong></td>
+<td style="text-align: left;">Enter the corrected lowercase checksum for the replacement file.</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="IMDA Edit upload Run page for correcting FTP file and checksum details." src="../assets/img/edit_run.png" /></p>
+<h3 id="edit-metabolite-compound-file">Edit Metabolite / Compound File</h3>
+<p>Use this option when the processed metabolite or compound file needs to be replaced.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Field</th>
+<th style="text-align: left;">What to Enter</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Study</strong></td>
+<td style="text-align: left;">Select the study linked to the processed file.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Compound Document</strong></td>
+<td style="text-align: left;">Upload the corrected metabolite or compound file.</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="IMDA Edit Metabolite/Compound page for replacing the processed compound document." src="../assets/img/edit_metabolite_compound_file.png" /></p>
 <h2 id="controlled-vocabulary-updates">Controlled Vocabulary Updates</h2>
 <p>Use <strong>Browse Lists</strong> to check whether an organism, source, or MS/NMR instrument term already exists. If the required term is missing, use <strong>Update List</strong> to submit a new controlled vocabulary request.</p>
-<p><img alt="IMDA Update List page for controlled vocabulary requests." src="../assets/img/17.png" /></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Browse List</th>
+<th style="text-align: left;">What to Check</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>MS Instrument</strong></td>
+<td style="text-align: left;">Confirm whether the required mass spectrometry instrument already exists.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>NMR Instrument</strong></td>
+<td style="text-align: left;">Confirm whether the required NMR instrument already exists.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Source / Organism Terms</strong></td>
+<td style="text-align: left;">Use existing controlled terms wherever possible.</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="IMDA Browse Lists page showing MS and NMR instrument controlled lists." src="../assets/img/browse_list_ms_nmr.png" /></p>
+<h3 id="update-list">Update List</h3>
+<p>Request a new master-list value only when the required value is not already available.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Field</th>
+<th style="text-align: left;">What to Enter</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>List Type</strong></td>
+<td style="text-align: left;">Select the category to update, such as MS instrument, NMR instrument, organism, or source.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Name / Value</strong></td>
+<td style="text-align: left;">Enter the exact term to be added.</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="IMDA Update List page for requesting missing master list values." src="../assets/img/update_list.png" /></p>
 <h2 id="support-and-citation">Support and Citation</h2>
 <table>
 <thead>
