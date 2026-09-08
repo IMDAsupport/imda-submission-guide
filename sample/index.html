@@ -328,6 +328,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#mhd-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      MHD Alignment
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#template-requirements" class="md-nav__link">
     <span class="md-ellipsis">
       Template Requirements
@@ -481,6 +490,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#mhd-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      MHD Alignment
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#template-requirements" class="md-nav__link">
     <span class="md-ellipsis">
       Template Requirements
@@ -507,6 +525,38 @@
 
 <h1 id="sample">Sample</h1>
 <p>Sample registration defines the origin, source, classification, and file count for all samples.</p>
+<h2 id="mhd-alignment">MHD Alignment</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">MHD Term</th>
+<th style="text-align: left;">IMDA SOP Meaning</th>
+<th style="text-align: left;">Minimum Expectation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Subject</strong></td>
+<td style="text-align: left;">Biological source from which a sample is derived.</td>
+<td style="text-align: left;">Capture organism and relevant source context.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Sample</strong></td>
+<td style="text-align: left;">Registered specimen or aliquot used in the study.</td>
+<td style="text-align: left;">Each sample must link to one study.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Characteristic Definition</strong></td>
+<td style="text-align: left;">Type of sample/subject descriptor.</td>
+<td style="text-align: left;">Include organism, organism part/source, disease, or cell type where applicable.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Characteristic Value</strong></td>
+<td style="text-align: left;">Actual value for a characteristic.</td>
+<td style="text-align: left;">Use controlled vocabulary values where available; use <strong>NA</strong> only when not applicable.</td>
+</tr>
+</tbody>
+</table>
 <table>
 <thead>
 <tr>
@@ -521,7 +571,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Source</strong>*</td>
-<td style="text-align: left;">Primary sample origin, such as tissue, cell culture, or biofluid.</td>
+<td style="text-align: left;">Primary sample origin, such as organism part, tissue, cell culture, or biofluid.</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Organism Name</strong>*</td>

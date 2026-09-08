@@ -350,6 +350,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#mhd-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      MHD Alignment
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#cross-reference-and-data-integrity" class="md-nav__link">
     <span class="md-ellipsis">
       Cross-Reference and Data Integrity
@@ -481,6 +490,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#mhd-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      MHD Alignment
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#cross-reference-and-data-integrity" class="md-nav__link">
     <span class="md-ellipsis">
       Cross-Reference and Data Integrity
@@ -507,6 +525,43 @@
 
 <h1 id="experiment">Experiment</h1>
 <p>Experiment registration captures the analytical workflow and processed metabolite data.</p>
+<h2 id="mhd-alignment">MHD Alignment</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">MHD Term</th>
+<th style="text-align: left;">IMDA SOP Meaning</th>
+<th style="text-align: left;">Minimum Expectation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Assay</strong></td>
+<td style="text-align: left;">MS/NMR analytical measurement linked to the study.</td>
+<td style="text-align: left;">One study should have at least one assay.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Protocol</strong></td>
+<td style="text-align: left;">Sample preparation, chromatography, MS/NMR acquisition, or data processing method.</td>
+<td style="text-align: left;">Each assay should follow at least one protocol.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Parameter Definition</strong></td>
+<td style="text-align: left;">Instrument or acquisition parameter type.</td>
+<td style="text-align: left;">Capture instrument, acquisition polarity, ionization, and other method parameters where relevant.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Parameter Value</strong></td>
+<td style="text-align: left;">The selected or entered value for a parameter.</td>
+<td style="text-align: left;">Use dropdown or controlled vocabulary values when provided.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Sample Run</strong></td>
+<td style="text-align: left;">Analytical run connecting a sample to generated raw files.</td>
+<td style="text-align: left;">Each sample run must reference one sample and one or more raw data files.</td>
+</tr>
+</tbody>
+</table>
 <p><strong>Key Actions:</strong></p>
 <ul>
 <li>Select the analytical technique, such as MS or NMR.</li>
@@ -524,7 +579,7 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><strong>Mass Spectrometry (MS)</strong></td>
-<td style="text-align: left;">Mass Spectrometer Type, MS Instrument Name, MS Ionization Method</td>
+<td style="text-align: left;">Mass Spectrometer Type, MS Instrument Name, MS Ionization Method, Acquisition Polarity</td>
 <td style="text-align: left;">Use dropdown lists where provided.</td>
 </tr>
 <tr>
@@ -538,7 +593,7 @@
 <ol>
 <li>Retrieve sample IDs from <strong>Register Sample</strong> or <strong>My Sample</strong> and enter them in the template.</li>
 <li>Enter the MD5 checksum for each final zipped raw data file.</li>
-<li>Ensure the metabolite or compound file includes metabolite name, SMILES string, InChI ID, and quantification data where applicable.</li>
+<li>Ensure the metabolite or compound file includes metabolite name, metabolite identifier, SMILES string, InChI ID, and quantification data where applicable.</li>
 <li>Match file names in the template exactly with files uploaded to the FTP server.</li>
 <li>Use <strong>NA</strong> for fields that are required but genuinely not applicable.</li>
 </ol>

@@ -308,6 +308,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#mhd-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      MHD Alignment
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -523,6 +532,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#mhd-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      MHD Alignment
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -544,6 +562,10 @@
 <div class="admonition info">
 <p class="admonition-title">Testing Portal</p>
 <p>Use the IMDA testing database for validation: <a href="https://ibdc.dbt.gov.in/imda_test/">https://ibdc.dbt.gov.in/imda_test/</a>.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Terminology Alignment</p>
+<p>This guide uses MetabolomicsHub Common Data Model terms where they match IMDA submission fields. In that model, core MS submission objects include <strong>Study</strong>, <strong>Person</strong>, <strong>Organization</strong>, <strong>Protocol</strong>, <strong>Sample</strong>, <strong>Sample Run</strong>, <strong>Assay</strong>, <strong>Raw Data File</strong>, and <strong>Metadata File</strong>.</p>
 </div>
 <h2 id="before-you-start">Before You Start</h2>
 <p>Complete these checks before beginning a new submission:</p>
@@ -589,6 +611,38 @@
 <p><img alt="IMDA dashboard showing sidebar workflow options." src="assets/img/2.png" /></p>
 <h2 id="register-project">Register Project</h2>
 <p><strong>Purpose:</strong> Define the overall research initiative, funding source, and investigators responsible for the data.</p>
+<h2 id="mhd-alignment">MHD Alignment</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">MHD Term</th>
+<th style="text-align: left;">IMDA SOP Meaning</th>
+<th style="text-align: left;">Minimum Expectation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Study</strong></td>
+<td style="text-align: left;">The scientific dataset submitted to IMDA under a project.</td>
+<td style="text-align: left;">One or more studies can be associated with a project.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Person</strong></td>
+<td style="text-align: left;">Principal Investigator, submitter, and contributing authors.</td>
+<td style="text-align: left;">Include full name, email, and affiliation.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Organization</strong></td>
+<td style="text-align: left;">Institute, department, laboratory, or data provider affiliation.</td>
+<td style="text-align: left;">Provide a clear organization name for responsible contributors.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Data Provider</strong></td>
+<td style="text-align: left;">Group or organization providing the dataset.</td>
+<td style="text-align: left;">Identify the provider through submitter and affiliation details.</td>
+</tr>
+</tbody>
+</table>
 <table>
 <thead>
 <tr>
