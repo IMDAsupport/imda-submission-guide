@@ -282,6 +282,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#complete-submission-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Complete Submission Flow
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#data-and-file-preparation" class="md-nav__link">
     <span class="md-ellipsis">
       Data and File Preparation
@@ -532,6 +541,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#complete-submission-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Complete Submission Flow
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#data-and-file-preparation" class="md-nav__link">
     <span class="md-ellipsis">
       Data and File Preparation
@@ -571,6 +589,81 @@
 <p class="admonition-title">Testing Portal</p>
 <p>Use the IMDA testing database for validation: <a href="https://ibdc.dbt.gov.in/imda_test/">https://ibdc.dbt.gov.in/imda_test/</a>.</p>
 </div>
+<h2 id="complete-submission-flow">Complete Submission Flow</h2>
+<p>Follow the IMDA workflow in this order so that every later form can use the identifiers created in the earlier steps.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Step</th>
+<th style="text-align: left;">IMDA Menu</th>
+<th style="text-align: left;">What Happens</th>
+<th style="text-align: left;">Output Needed for Next Step</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;"><strong>Login / Register</strong></td>
+<td style="text-align: left;">Create and activate the user account, then log in.</td>
+<td style="text-align: left;">Active IMDA user account.</td>
+</tr>
+<tr>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;"><strong>Register Project</strong></td>
+<td style="text-align: left;">Enter the project title, contributors, research area, funding source, and description.</td>
+<td style="text-align: left;">Project ID.</td>
+</tr>
+<tr>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;"><strong>Register Study</strong></td>
+<td style="text-align: left;">Link the study to the project and enter study details, authors, data type, summary, keywords, release date, and publication/approval details.</td>
+<td style="text-align: left;">Study ID.</td>
+</tr>
+<tr>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;"><strong>Register Sample</strong></td>
+<td style="text-align: left;">Link samples to the study, select source and organism, check taxonomy ID, and upload the sample template.</td>
+<td style="text-align: left;">IMDA sample IDs.</td>
+</tr>
+<tr>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;"><strong>Register Experiment</strong></td>
+<td style="text-align: left;">Upload the metabolite/compound file and the MS or NMR analytical template.</td>
+<td style="text-align: left;">Experiment metadata linked to sample IDs.</td>
+</tr>
+<tr>
+<td style="text-align: left;">6</td>
+<td style="text-align: left;"><strong>Zip and MD5 Checksum</strong></td>
+<td style="text-align: left;">Zip raw data folders where required and generate checksums for the final files.</td>
+<td style="text-align: left;">Final file names and MD5 checksum values.</td>
+</tr>
+<tr>
+<td style="text-align: left;">7</td>
+<td style="text-align: left;"><strong>FTP Files Upload</strong></td>
+<td style="text-align: left;">Upload zipped raw/derived data files to the correct project and study folder.</td>
+<td style="text-align: left;">Uploaded files visible on the server.</td>
+</tr>
+<tr>
+<td style="text-align: left;">8</td>
+<td style="text-align: left;"><strong>Map Uploaded Files</strong></td>
+<td style="text-align: left;">Link each uploaded file to the correct study, sample, assay/protocol, and MD5 checksum.</td>
+<td style="text-align: left;">Files validated for the study.</td>
+</tr>
+<tr>
+<td style="text-align: left;">9</td>
+<td style="text-align: left;"><strong>Submitted Data</strong></td>
+<td style="text-align: left;">Check submission status and respond to any curator-requested corrections.</td>
+<td style="text-align: left;">Submitted or curated study record.</td>
+</tr>
+<tr>
+<td style="text-align: left;">10</td>
+<td style="text-align: left;"><strong>Reviewer Access URL</strong></td>
+<td style="text-align: left;">Activate and copy the private reviewer link when needed.</td>
+<td style="text-align: left;">Shareable reviewer URL.</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="IMDA submission workflow from login and registration to reviewer access URL." src="../assets/img/submission_flow.png" /></p>
 <h2 id="data-and-file-preparation">Data and File Preparation</h2>
 <ul>
 <li>Prepare raw and derived data files.</li>
@@ -587,6 +680,10 @@
 <li>Prepare the study summary, keywords, DOI where applicable, and ethical or institutional approval numbers.</li>
 <li>Keep project, study, sample, assay, protocol, and file names consistent across all forms/templates.</li>
 </ul>
+<div class="admonition warning">
+<p class="admonition-title">Before Moving Ahead</p>
+<p>Do not start uploading files until project, study, sample, and experiment metadata are complete. File mapping depends on the IDs created during those steps.</p>
+</div>
 <p><img alt="IMDA dashboard showing sidebar workflow options." src="../assets/img/dashboard_landing_page.png" /></p>
 
 
