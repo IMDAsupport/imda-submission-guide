@@ -405,9 +405,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#cross-reference-and-data-integrity" class="md-nav__link">
+  <a href="#match-ids-and-file-names" class="md-nav__link">
     <span class="md-ellipsis">
-      Cross-Reference and Data Integrity
+      Match IDs and File Names
     </span>
   </a>
   
@@ -545,9 +545,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#cross-reference-and-data-integrity" class="md-nav__link">
+  <a href="#match-ids-and-file-names" class="md-nav__link">
     <span class="md-ellipsis">
-      Cross-Reference and Data Integrity
+      Match IDs and File Names
     </span>
   </a>
   
@@ -570,13 +570,13 @@
 
 
 <h1 id="experiment">Experiment</h1>
-<p>Experiment registration captures the analytical workflow and processed metabolite data.</p>
+<p>Experiment registration explains how the samples were measured and which result files belong to the study.</p>
 <p><img alt="Experiment registration visual checklist showing technique, sample ID, instrument, raw file, and compound file requirements." src="../assets/img/experiment_step_guide.png" /></p>
 <p><strong>Key Actions:</strong></p>
 <ul>
-<li>Select the analytical technique, such as MS or NMR.</li>
+<li>Select the method used, such as MS or NMR.</li>
 <li>Download and complete the appropriate experiment template.</li>
-<li>Upload the analytical template and metabolite or compound file.</li>
+<li>Upload the experiment template and metabolite/compound result file.</li>
 </ul>
 <table>
 <thead>
@@ -590,7 +590,7 @@
 <tr>
 <td style="text-align: left;"><strong>Mass Spectrometry (MS)</strong></td>
 <td style="text-align: left;">Mass Spectrometer Type, MS Instrument Name, MS Ionization Method, Acquisition Polarity</td>
-<td style="text-align: left;">Use dropdown lists where provided. Prefer recognized instrument model, ionization type, and polarity terms.</td>
+<td style="text-align: left;">Use dropdown lists where provided. Select the closest correct instrument and method details.</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Nuclear Magnetic Resonance (NMR)</strong></td>
@@ -616,23 +616,23 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Assay / Technique</strong></td>
-<td style="text-align: left;">MS or NMR assay used to generate the data, such as LC-MS, GC-MS, CE-MS, MS, or NMR where applicable.</td>
-<td style="text-align: left;">Use the portal dropdown term.</td>
+<td style="text-align: left;">Method used to generate the data, such as LC-MS, GC-MS, CE-MS, MS, or NMR.</td>
+<td style="text-align: left;">Use the closest dropdown option in the portal.</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Protocol / Method Details</strong></td>
-<td style="text-align: left;">Sample preparation, extraction, chromatography, MS/NMR acquisition, and processing method details.</td>
-<td style="text-align: left;">Keep each method description short and factual, usually 2-4 lines.</td>
+<td style="text-align: left;">Short method details: sample preparation, extraction, chromatography, MS/NMR run, and data processing.</td>
+<td style="text-align: left;">Keep it short and factual, usually 2-4 lines.</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Instrument Name</strong></td>
-<td style="text-align: left;">Official instrument model/name.</td>
-<td style="text-align: left;">Use the controlled term if available; otherwise request it through <strong>Update List</strong>.</td>
+<td style="text-align: left;">Instrument model/name used for data generation.</td>
+<td style="text-align: left;">Select the available portal term. If missing, request it through <strong>Update List</strong>.</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Ionization / Acquisition Polarity</strong></td>
-<td style="text-align: left;">Ionization method and positive, negative, alternating, or mixed polarity for MS data where applicable.</td>
-<td style="text-align: left;">Select from dropdowns; do not type variants manually if a controlled term exists.</td>
+<td style="text-align: left;">For MS data, enter ionization method and positive/negative/alternating/mixed mode where applicable.</td>
+<td style="text-align: left;">Select from dropdowns whenever available.</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Raw Data File Name</strong></td>
@@ -646,8 +646,8 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Metabolite / Compound File</strong></td>
-<td style="text-align: left;">Processed metabolite table with identifiers and quantified values.</td>
-<td style="text-align: left;">Include metabolite name, identifier, SMILES, InChI, and quantification data where available.</td>
+<td style="text-align: left;">Result table containing detected/identified metabolites or compounds.</td>
+<td style="text-align: left;">Include metabolite name, ID, SMILES, InChI, and values where available.</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>MS/NMR Template</strong></td>
@@ -658,13 +658,13 @@
 </table>
 <div class="admonition tip">
 <p class="admonition-title">Required Experiment Context</p>
-<p>Every experiment should identify the assay/technique, method or protocol, sample ID, instrument, raw data file, and checksum. For MS data, include ionization and acquisition polarity wherever applicable.</p>
+<p>Every experiment should clearly show the method, sample ID, instrument, raw data file name, and checksum. For MS data, also include ionization and polarity if applicable.</p>
 </div>
-<h2 id="cross-reference-and-data-integrity">Cross-Reference and Data Integrity</h2>
+<h2 id="match-ids-and-file-names">Match IDs and File Names</h2>
 <ol>
 <li>Retrieve sample IDs from <strong>Register Sample</strong> or <strong>My Sample</strong> and enter them in the template.</li>
 <li>Enter the MD5 checksum for each final zipped raw data file.</li>
-<li>Ensure the metabolite or compound file includes metabolite name, metabolite identifier, SMILES string, InChI ID, and quantification data where applicable.</li>
+<li>Make sure the metabolite or compound file includes metabolite name, ID, SMILES, InChI, and measured values where available.</li>
 <li>Match file names in the template exactly with files uploaded to the FTP server.</li>
 <li>Use <strong>NA</strong> for fields that are required but genuinely not applicable.</li>
 </ol>
