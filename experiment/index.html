@@ -683,7 +683,7 @@
 <p><img alt="IMDA My Sample page showing where to find generated Sample IDs for experiment templates." src="../assets/img/sample_ids_for_experiment.png" /></p>
 <div class="admonition tip">
 <p class="admonition-title">Sample ID Rule</p>
-<p>Do not type local sample names in the <strong>Sample id</strong> column. Copy the IMDA-generated Sample ID exactly as shown in <strong>My Sample</strong>.</p>
+<p>Do not type local sample names in the <strong>Sample id</strong> column. Copy the IMDA-generated Sample ID exactly as shown in <strong>My Sample</strong>. If one sample has multiple data files, repeat the same Sample ID once for each file row. For example, if Sample ID <strong>1060</strong> has 2 files, enter <strong>1060</strong> in two rows and give the correct file name/checksum for each row.</p>
 </div>
 <h2 id="ms-template-columns">MS Template Columns</h2>
 <p>Download the <a href="../assets/templates/MS_file_template.xlsx">MS file template</a> when the study uses mass spectrometry. Fill one row for each sample/file combination.</p>
@@ -757,6 +757,10 @@
 </tr>
 </tbody>
 </table>
+<div class="admonition tip">
+<p class="admonition-title">Multiple Files for One Sample</p>
+<p>If <strong>Number of files per sample</strong> is 2, create 2 rows for that sample in the MS template. Repeat the same <strong>Sample id</strong> and enter the matching <strong>MS Data File Name</strong> and <strong>Md5checksum</strong> for each file.</p>
+</div>
 <h2 id="nmr-template-columns">NMR Template Columns</h2>
 <p>Download the <a href="../assets/templates/NMR_file_template.xlsx">NMR file template</a> when the study uses nuclear magnetic resonance. Fill one row for each sample/file combination.</p>
 <div class="admonition tip">
@@ -829,10 +833,15 @@
 </tr>
 </tbody>
 </table>
+<div class="admonition tip">
+<p class="admonition-title">Multiple Files for One Sample</p>
+<p>If <strong>Number of files per sample</strong> is 2, create 2 rows for that sample in the NMR template. Repeat the same <strong>Sample id</strong> and enter the matching <strong>NMR Data File Name</strong> and <strong>Md5checksum</strong> for each file.</p>
+</div>
 <h2 id="match-ids-and-file-names">Match IDs and File Names</h2>
 <ol>
 <li>Use the Sample IDs shown in <strong>My Sample</strong> after sample registration.</li>
 <li>Use the correct template for the selected technique.</li>
+<li>If one sample has multiple files, repeat the same Sample ID in multiple rows, one row per file.</li>
 <li>Keep uploaded file names exactly the same as the file names entered in the template.</li>
 <li>Generate the MD5 checksum only after the final file or ZIP is ready.</li>
 <li>Use <strong>NA</strong> for required fields that are genuinely not applicable.</li>
