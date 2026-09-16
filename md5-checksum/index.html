@@ -436,9 +436,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#script-instructions" class="md-nav__link">
+  <a href="#how-to-calculate-md5" class="md-nav__link">
     <span class="md-ellipsis">
-      Script Instructions
+      How to Calculate MD5
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-output" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Output
     </span>
   </a>
   
@@ -563,9 +572,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#script-instructions" class="md-nav__link">
+  <a href="#how-to-calculate-md5" class="md-nav__link">
     <span class="md-ellipsis">
-      Script Instructions
+      How to Calculate MD5
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-output" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Output
     </span>
   </a>
   
@@ -638,29 +656,54 @@
 <p class="admonition-title">Checksum Rules</p>
 <p>Enter MD5 checksum values in lowercase and make sure each checksum corresponds to the exact ZIP file uploaded.</p>
 </div>
-<h2 id="script-instructions">Script Instructions</h2>
+<h2 id="how-to-calculate-md5">How to Calculate MD5</h2>
+<p>Use the IMDA MD5 tool/script when possible. The usual steps are:</p>
+<ol>
+<li>Keep the final ZIP/raw file in one folder.</li>
+<li>Run the downloaded MD5 script in that same folder.</li>
+<li>Open the generated <code>md5sum.txt</code> file.</li>
+<li>Copy the checksum value for the exact file uploaded to IMDA.</li>
+</ol>
+<p>If users need to calculate MD5 manually, they can use the command for their operating system.</p>
 <table>
 <thead>
 <tr>
 <th style="text-align: left;">Operating System</th>
-<th style="text-align: left;">What to Do</th>
+<th style="text-align: left;">Command Example</th>
+<th style="text-align: left;">What Users Should Copy</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Windows</strong></td>
-<td style="text-align: left;">Download the Windows script, place it near the files to be zipped, and run it as instructed.</td>
+<td style="text-align: left;"><strong>Windows PowerShell</strong></td>
+<td style="text-align: left;"><code>Get-FileHash .\filename.zip -Algorithm MD5</code></td>
+<td style="text-align: left;">Copy the value shown under <code>Hash</code>.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Windows Command Prompt</strong></td>
+<td style="text-align: left;"><code>certutil -hashfile filename.zip MD5</code></td>
+<td style="text-align: left;">Copy the 32-character MD5 value.</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>macOS</strong></td>
-<td style="text-align: left;">Download the macOS script, allow execution if required, and run it in the data folder.</td>
+<td style="text-align: left;"><code>md5 filename.zip</code></td>
+<td style="text-align: left;">Copy the value printed after <code>MD5 (...) =</code>.</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Linux</strong></td>
-<td style="text-align: left;">Download the Linux script, make it executable if needed, and run it in the data folder.</td>
+<td style="text-align: left;"><code>md5sum filename.zip</code></td>
+<td style="text-align: left;">Copy the first 32-character value before the file name.</td>
 </tr>
 </tbody>
 </table>
+<p>Replace <code>filename.zip</code> with the real final file name. If the file name has spaces, place it in quotes, for example <code>md5sum "sample raw data.zip"</code>.</p>
+<h2 id="example-output">Example Output</h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>8b1a9953c4611296a827abf8c47804d7  sample_data.zip
+</code></pre></div>
+<p>In this example, enter only:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>8b1a9953c4611296a827abf8c47804d7
+</code></pre></div>
+<p>Do not copy the file name into the MD5 checksum field.</p>
 <div class="admonition warning">
 <p class="admonition-title">Common Mistakes</p>
 <p>Generate the checksum after the final ZIP file is ready. If you rename, edit, re-zip, or replace a file, generate the checksum again.</p>

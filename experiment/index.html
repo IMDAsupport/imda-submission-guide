@@ -396,9 +396,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#what-to-fill-in-the-experiment-template" class="md-nav__link">
+  <a href="#experiment-form-screen" class="md-nav__link">
     <span class="md-ellipsis">
-      What to Fill in the Experiment Template
+      Experiment Form Screen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-to-fill-in-the-portal" class="md-nav__link">
+    <span class="md-ellipsis">
+      What to Fill in the Portal
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ms-template-columns" class="md-nav__link">
+    <span class="md-ellipsis">
+      MS Template Columns
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nmr-template-columns" class="md-nav__link">
+    <span class="md-ellipsis">
+      NMR Template Columns
     </span>
   </a>
   
@@ -536,9 +563,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#what-to-fill-in-the-experiment-template" class="md-nav__link">
+  <a href="#experiment-form-screen" class="md-nav__link">
     <span class="md-ellipsis">
-      What to Fill in the Experiment Template
+      Experiment Form Screen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-to-fill-in-the-portal" class="md-nav__link">
+    <span class="md-ellipsis">
+      What to Fill in the Portal
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ms-template-columns" class="md-nav__link">
+    <span class="md-ellipsis">
+      MS Template Columns
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nmr-template-columns" class="md-nav__link">
+    <span class="md-ellipsis">
+      NMR Template Columns
     </span>
   </a>
   
@@ -570,109 +624,198 @@
 
 
 <h1 id="experiment">Experiment</h1>
-<p>Experiment registration explains how the samples were measured and which result files belong to the study.</p>
-<p><img alt="Experiment registration visual checklist showing technique, sample ID, instrument, raw file, and compound file requirements." src="../assets/img/experiment_step_guide.png" /></p>
-<p><strong>Key Actions:</strong></p>
-<ul>
-<li>Select the method used, such as MS or NMR.</li>
-<li>Download and complete the appropriate experiment template.</li>
-<li>Upload the experiment template and metabolite/compound result file.</li>
-</ul>
+<p>Experiment registration tells IMDA how the samples were measured and which experiment/result files belong to the selected study.</p>
+<h2 id="experiment-form-screen">Experiment Form Screen</h2>
+<p>Use <strong>Register Experiment</strong> from the left sidebar. Select the technique, select the correct study, upload the metabolite/compound file, and upload the completed MS or NMR experiment template.</p>
+<p><img alt="IMDA experiment registration screen showing technique, study, metabolite compound file, and MS/NMR template upload." src="../assets/img/experiment_registration_form.png" /></p>
+<h2 id="what-to-fill-in-the-portal">What to Fill in the Portal</h2>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Template Category</th>
-<th style="text-align: left;">Example Columns</th>
-<th style="text-align: left;">Mandatory Rules</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><strong>Mass Spectrometry (MS)</strong></td>
-<td style="text-align: left;">Mass Spectrometer Type, MS Instrument Name, MS Ionization Method, Acquisition Polarity</td>
-<td style="text-align: left;">Use dropdown lists where provided. Select the closest correct instrument and method details.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Nuclear Magnetic Resonance (NMR)</strong></td>
-<td style="text-align: left;">NMR Instrument Name, NMR Type, NMR Solvent</td>
-<td style="text-align: left;">Do not change column headers.</td>
-</tr>
-</tbody>
-</table>
-<h2 id="what-to-fill-in-the-experiment-template">What to Fill in the Experiment Template</h2>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Column / Field Type</th>
+<th style="text-align: left;">Portal Field</th>
 <th style="text-align: left;">What to Enter</th>
 <th style="text-align: left;">Writing Guideline</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Sample ID</strong></td>
-<td style="text-align: left;">IMDA-generated sample ID from the Sample step.</td>
-<td style="text-align: left;">Copy exactly from the portal; do not use local sample names in this field.</td>
+<td style="text-align: left;"><strong>Select Technique</strong>*</td>
+<td style="text-align: left;">Select the experiment technique, such as MS or NMR.</td>
+<td style="text-align: left;">Choose the same technique used in the study and template.</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Assay / Technique</strong></td>
-<td style="text-align: left;">Method used to generate the data, such as LC-MS, GC-MS, CE-MS, MS, or NMR.</td>
-<td style="text-align: left;">Use the closest dropdown option in the portal.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Protocol / Method Details</strong></td>
-<td style="text-align: left;">Short method details: sample preparation, extraction, chromatography, MS/NMR run, and data processing.</td>
-<td style="text-align: left;">Keep it short and factual, usually 2-4 lines.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Instrument Name</strong></td>
-<td style="text-align: left;">Instrument model/name used for data generation.</td>
-<td style="text-align: left;">Select the available portal term. If missing, request it through <strong>Update List</strong>.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Ionization / Acquisition Polarity</strong></td>
-<td style="text-align: left;">For MS data, enter ionization method and positive/negative/alternating/mixed mode where applicable.</td>
-<td style="text-align: left;">Select from dropdowns whenever available.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Raw Data File Name</strong></td>
-<td style="text-align: left;">Exact uploaded ZIP or raw file name.</td>
-<td style="text-align: left;">Must match the FTP-uploaded file name exactly, including extension.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>MD5 Checksum</strong></td>
-<td style="text-align: left;">32-character checksum for the uploaded file.</td>
-<td style="text-align: left;">Use lowercase checksum values.</td>
+<td style="text-align: left;"><strong>Study</strong></td>
+<td style="text-align: left;">Select the Study ID linked to this experiment.</td>
+<td style="text-align: left;">Make sure the selected study belongs to the correct project.</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Metabolite / Compound File</strong></td>
-<td style="text-align: left;">Result table containing detected/identified metabolites or compounds.</td>
-<td style="text-align: left;">Include metabolite name, ID, SMILES, InChI, and values where available.</td>
+<td style="text-align: left;">Upload the raw, processed, or annotated metabolite/compound result file when available.</td>
+<td style="text-align: left;">Use a clear file name and keep the same name in later file mapping.</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>MS/NMR Template</strong></td>
-<td style="text-align: left;">Completed analytical template for the selected technique.</td>
-<td style="text-align: left;">Upload the correct template type; do not modify headers.</td>
+<td style="text-align: left;"><strong>MS/NMR File Template</strong></td>
+<td style="text-align: left;">Upload the completed MS or NMR Excel template.</td>
+<td style="text-align: left;">Use MS template for mass spectrometry and NMR template for nuclear magnetic resonance. Do not change column headers.</td>
 </tr>
 </tbody>
 </table>
-<div class="admonition tip">
-<p class="admonition-title">Required Experiment Context</p>
-<p>Every experiment should clearly show the method, sample ID, instrument, raw data file name, and checksum. For MS data, also include ionization and polarity if applicable.</p>
-</div>
+<h2 id="ms-template-columns">MS Template Columns</h2>
+<p>Download the <a href="../assets/templates/MS_file_template.xlsx">MS file template</a> when the study uses mass spectrometry. Fill one row for each sample/file combination.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">MS Template Column</th>
+<th style="text-align: left;">What the User Should Fill</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Sample id</strong></td>
+<td style="text-align: left;">IMDA-generated Sample ID from the Sample step. Copy it exactly.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Sample Name</strong></td>
+<td style="text-align: left;">Sample name used in the sample template.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Reference Standard</strong></td>
+<td style="text-align: left;">Reference standard or internal standard used. Enter NA if not applicable.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Chromatography Instrument Name</strong></td>
+<td style="text-align: left;">LC/GC/CE or other chromatography system used before MS.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Column Model</strong></td>
+<td style="text-align: left;">Chromatography column model/name.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Column Type</strong></td>
+<td style="text-align: left;">Column chemistry/type, such as C18, HILIC, GC column, or NA.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Mass Spectrometer Type</strong></td>
+<td style="text-align: left;">MS technique type, such as LCMS, GCMS, ICP-MS, or other available option.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>MS Instrument Name</strong></td>
+<td style="text-align: left;">MS instrument model/name. Use the closest available option.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>MS Instrument Type</strong></td>
+<td style="text-align: left;">Instrument type, such as QTOF, Triple TOF, ion trap, or other available option.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>MS Ionization Method</strong></td>
+<td style="text-align: left;">Ionization source, such as ESI, APCI, APPI, MALDI, or other available option.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ion Mode/Scan Polarity</strong></td>
+<td style="text-align: left;">Positive, negative, or both, as used during acquisition.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Data Transformation(Software/s Used)</strong></td>
+<td style="text-align: left;">Software used for conversion/processing, such as ProteoWizard, XCMS, MZmine, vendor software, or NA.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>MS Data File Name</strong></td>
+<td style="text-align: left;">Exact raw/ZIP data file name that will be uploaded. Include the extension.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Md5checksum</strong></td>
+<td style="text-align: left;">MD5 checksum for the final uploaded MS data file. Generate it after the ZIP/file is final.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="nmr-template-columns">NMR Template Columns</h2>
+<p>Download the <a href="../assets/templates/NMR_file_template.xlsx">NMR file template</a> when the study uses nuclear magnetic resonance. Fill one row for each sample/file combination.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">NMR Template Column</th>
+<th style="text-align: left;">What the User Should Fill</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Sample id</strong></td>
+<td style="text-align: left;">IMDA-generated Sample ID from the Sample step. Copy it exactly.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Sample Name</strong></td>
+<td style="text-align: left;">Sample name used in the sample template.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Reference Standard</strong></td>
+<td style="text-align: left;">Reference standard used for NMR. Enter NA if not applicable.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>NMR Instrument Name</strong></td>
+<td style="text-align: left;">NMR instrument model/name.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>NMR Type</strong></td>
+<td style="text-align: left;">Solution NMR, solid-state NMR, or the closest available type.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>NMR Experiment Type</strong></td>
+<td style="text-align: left;">Experiment type, such as 1D 1H, 1D 13C, 2D COSY, HSQC, or other available option.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>NMR Spectrometer Frequency</strong></td>
+<td style="text-align: left;">Spectrometer frequency, such as 400 MHz, 500 MHz, or 600 MHz.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>NMR Probe</strong></td>
+<td style="text-align: left;">Probe used for acquisition.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>NMR Probe Temperature</strong></td>
+<td style="text-align: left;">Probe/sample temperature during acquisition, with unit where possible.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>NMR Solvent</strong></td>
+<td style="text-align: left;">Solvent used, such as D2O, CDCl3, DMSO-d6, or other available option.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>NMR Tube Size</strong></td>
+<td style="text-align: left;">Tube size, such as 5 mm, or NA if not applicable.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Data Transformation(Software/s Used)</strong></td>
+<td style="text-align: left;">Software used for processing/conversion.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>NMR Data File Name</strong></td>
+<td style="text-align: left;">Exact raw/ZIP NMR data file name that will be uploaded. Include the extension.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Md5checksum</strong></td>
+<td style="text-align: left;">MD5 checksum for the final uploaded NMR data file. Generate it after the ZIP/file is final.</td>
+</tr>
+</tbody>
+</table>
 <h2 id="match-ids-and-file-names">Match IDs and File Names</h2>
 <ol>
-<li>Retrieve sample IDs from <strong>Register Sample</strong> or <strong>My Sample</strong> and enter them in the template.</li>
-<li>Enter the MD5 checksum for each final zipped raw data file.</li>
-<li>Make sure the metabolite or compound file includes metabolite name, ID, SMILES, InChI, and measured values where available.</li>
-<li>Match file names in the template exactly with files uploaded to the FTP server.</li>
-<li>Use <strong>NA</strong> for fields that are required but genuinely not applicable.</li>
+<li>Use the Sample IDs generated in the Sample step.</li>
+<li>Use the correct template for the selected technique.</li>
+<li>Keep uploaded file names exactly the same as the file names entered in the template.</li>
+<li>Generate the MD5 checksum only after the final file or ZIP is ready.</li>
+<li>Use <strong>NA</strong> for required fields that are genuinely not applicable.</li>
 </ol>
 <div class="admonition warning">
 <p class="admonition-title">Common Mistakes</p>
-<p>Do not use local sample names where the portal expects IMDA sample IDs. Do not rename template headers, and make sure raw file names, processed file names, instrument terms, polarity, and checksum values match the final uploaded files.</p>
+<p>Do not use local sample names where IMDA expects Sample IDs. Do not rename template headers. Make sure technique, Study ID, file name, and MD5 checksum all match the final uploaded files.</p>
 </div>
-<p><img alt="IMDA experiment registration form for study selection, metabolite compound file, and MS/NMR template upload." src="../assets/img/register_experiment.png" /></p>
+<p><strong>Final Action:</strong></p>
+<ol>
+<li>Download the correct MS or NMR template.</li>
+<li>Fill the template using Sample IDs and exact file names.</li>
+<li>Calculate MD5 checksum for each final uploaded file.</li>
+<li>Upload the metabolite/compound file and the completed MS/NMR template.</li>
+<li>Click <strong>Submit</strong>.</li>
+</ol>
 
 
 
