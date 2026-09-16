@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const images = Array.from(document.querySelectorAll(".md-typeset p > img:only-child"));
+  const images = Array.from(
+    document.querySelectorAll(".md-typeset p > img:only-child, .md-typeset .imda-scroll-image > img")
+  );
 
   if (!images.length) {
     return;
