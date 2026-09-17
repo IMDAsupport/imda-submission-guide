@@ -652,7 +652,7 @@
 
 
 <h1 id="ftp-file-uploads">FTP File Uploads</h1>
-<p>Use the FTP details shown in the IMDA portal to upload your prepared data files. Keep the password private and do not share screenshots that show the real password.</p>
+<p>Use the FTP details shown in the IMDA portal to upload your prepared data files. <strong>Keep the password private and do not share screenshots that show the real password.</strong></p>
 <h2 id="step-1-get-ftp-login-and-folder-details">Step 1: Get FTP Login and Folder Details</h2>
 <p>First open <strong>FTP Files Upload</strong> in the IMDA sidebar. This page gives the FTP login details and shows which project/study folder must be used for the selected study.</p>
 <p><img alt="IMDA FTP upload page showing login details with the password masked and the study selection area." src="../assets/img/ftp_portal_details.png" /></p>
@@ -679,21 +679,21 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Study ID</strong></td>
-<td style="text-align: left;">Select the correct study from the dropdown before checking the folder names.</td>
+<td style="text-align: left;">After submitting the experiment form and template, open this dropdown and select the correct temporary Study ID, such as <strong>TEMP_IMS_XX</strong>.</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Project Folder</strong></td>
-<td style="text-align: left;">Open this folder first in the FTP client.</td>
+<td style="text-align: left;">After the temporary Study ID is selected, the portal displays its related Project Folder, such as <strong>TEMP_IMP_XX</strong>. Open this folder first in the FTP client.</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Study Folder</strong></td>
-<td style="text-align: left;">Open this folder inside the project folder, then upload the data files there.</td>
+<td style="text-align: left;">The portal also displays the related Study Folder, such as <strong>TEMP_IMS_XX</strong>. Open this folder inside the Project Folder and upload the data files there.</td>
 </tr>
 </tbody>
 </table>
 <div class="admonition warning">
 <p class="admonition-title">Use the Folder Names Shown in the Portal</p>
-<p>The project and study IDs shown during registration may be temporary IDs. For FTP upload, use the <strong>Project Folder</strong> and <strong>Study Folder</strong> displayed on the FTP page after selecting the study. Do not guess or create folder names manually.</p>
+<p>Complete <strong>Register Experiment</strong> first. On the FTP page, select the correct temporary Study ID from the dropdown. IMDA will then display the matching temporary <strong>Project Folder</strong> and <strong>Study Folder</strong> created for that submission. Use these exact folder names in the FTP client; do not guess, rename, or create the folders manually.</p>
 </div>
 <h2 id="step-2-upload-files-in-filezilla">Step 2: Upload Files in FileZilla</h2>
 <p>Use FileZilla to connect to the IMDA FTP server and transfer the final prepared files into the correct <strong>Study Folder</strong>.</p>
