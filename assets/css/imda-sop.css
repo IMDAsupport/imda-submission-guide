@@ -8,7 +8,9 @@
 }
 
 .md-grid {
-  max-width: 1500px;
+  max-width: 1920px;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
 .md-main__inner {
@@ -47,7 +49,7 @@
 }
 
 .md-content__inner {
-  max-width: 1180px;
+  max-width: none;
 }
 
 .md-sidebar--primary .md-sidebar__scrollwrap {
@@ -288,6 +290,11 @@
 }
 
 @media screen and (max-width: 76.1875em) {
+  .md-grid {
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+  }
+
   .md-header__button.md-logo {
     display: block;
   }
