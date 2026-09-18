@@ -18,9 +18,10 @@
 }
 
 .md-header {
-  background: #f4f7f8;
-  border-bottom: 3px solid #16856f;
-  color: #183b73;
+  background: #0f5c56;
+  border-bottom: 3px solid var(--imda-blue);
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.16);
+  color: #fff;
 }
 
 .md-header__inner {
@@ -28,8 +29,11 @@
 }
 
 .md-header__button.md-logo {
-  margin: 0;
-  padding: 0.3rem 0.6rem 0.3rem 0;
+  background: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  border-radius: 4px;
+  margin: 0.25rem 0.65rem 0.25rem 0;
+  padding: 0.22rem 0.5rem;
 }
 
 .md-header__button.md-logo img {
@@ -38,14 +42,20 @@
 }
 
 .md-header__title,
-.md-header__button,
-.md-search__icon {
-  color: #183b73;
+.md-header__button {
+  color: #fff;
 }
 
-.md-search__form {
-  background: #fff;
-  border: 1px solid #ccd7df;
+.md-header .md-search__form,
+.md-header .md-search__input {
+  background-color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.82);
+}
+
+.md-header .md-search__icon,
+.md-header .md-search__input,
+.md-header .md-search__input::placeholder {
+  color: #243447;
 }
 
 .md-content__inner {
