@@ -51,65 +51,73 @@
 }
 
 .md-sidebar--primary .md-sidebar__scrollwrap {
-  background: #f3f7fa;
-  border-right: 1px solid #d5e0e7;
-  padding: 0.45rem 0.35rem;
+  background: #fff;
+  border-right: 1px solid #dfe5ea;
+  box-shadow: inset -1px 0 0 rgba(15, 23, 42, 0.02);
+  padding: 0.75rem 0.6rem;
 }
 
 .md-sidebar--primary .md-nav__title {
   background: transparent;
-  color: var(--imda-blue-dark);
-  font-size: 0.82rem;
+  border-bottom: 1px solid #e5eaee;
+  color: #334155;
+  font-size: 0.74rem;
   font-weight: 700;
-  padding-bottom: 0.55rem;
+  line-height: 1.4;
+  margin: 0 0.35rem 0.45rem;
+  padding: 0 0 0.65rem;
 }
 
 .md-sidebar--primary .md-nav__link {
   border-left: 3px solid transparent;
-  color: #26384a;
-  font-size: 0.78rem;
-  line-height: 1.35;
-  margin: 0.08rem 0;
-  padding: 0.38rem 0.55rem;
+  border-radius: 0 4px 4px 0;
+  color: #344054;
+  font-size: 0.74rem;
+  line-height: 1.4;
+  margin: 0.08rem 0.2rem;
+  min-height: 2rem;
+  padding: 0.42rem 0.65rem;
   transition: background-color 120ms ease, border-color 120ms ease, color 120ms ease;
 }
 
 .md-sidebar--primary .md-nav__link:hover,
 .md-sidebar--primary .md-nav__link:focus {
-  background: #e6eef5;
-  color: var(--imda-blue-dark);
+  background: #f0f4f6;
+  color: #174e48;
 }
 
 .md-sidebar--primary .md-nav__link--active {
-  background: #dce9ff;
-  border-left-color: var(--imda-blue);
-  color: var(--imda-blue-dark);
+  background: #e7f3f0;
+  border-left-color: #0f766e;
+  color: #0f4e49;
   font-weight: 700;
 }
 
 [data-md-color-scheme="slate"] .md-sidebar--primary .md-sidebar__scrollwrap {
-  background: #202a35;
-  border-right-color: #3b4755;
+  background: #1d252e;
+  border-right-color: #36414c;
+  box-shadow: none;
 }
 
 [data-md-color-scheme="slate"] .md-sidebar--primary .md-nav__title {
-  color: #9fc3ff;
+  border-bottom-color: #36414c;
+  color: #d7dee7;
 }
 
 [data-md-color-scheme="slate"] .md-sidebar--primary .md-nav__link {
-  color: #d3dbe5;
+  color: #c9d2dc;
 }
 
 [data-md-color-scheme="slate"] .md-sidebar--primary .md-nav__link:hover,
 [data-md-color-scheme="slate"] .md-sidebar--primary .md-nav__link:focus {
-  background: #2b3744;
+  background: #29343e;
   color: #fff;
 }
 
 [data-md-color-scheme="slate"] .md-sidebar--primary .md-nav__link--active {
-  background: #263f67;
-  border-left-color: #78a9ff;
-  color: #fff;
+  background: #193c3a;
+  border-left-color: #45b5a7;
+  color: #e8fffb;
 }
 
 .md-typeset h1 {
