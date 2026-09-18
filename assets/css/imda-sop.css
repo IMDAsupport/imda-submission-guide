@@ -19,7 +19,6 @@
 
 .md-header {
   background: #009485;
-  border-bottom: 3px solid var(--imda-blue);
   box-shadow: 0 2px 8px rgba(15, 23, 42, 0.16);
   color: #fff;
 }
